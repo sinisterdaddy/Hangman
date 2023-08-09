@@ -34,10 +34,10 @@ The Trexquant Hangman Project is a challenging but rewarding project. The projec
 
 <h2>CODE DESCRIPTION</h2>
 
-def is_valid_word(self, word):
+<h3>def is_valid_word(self, word):</h3>
 This function returns a Boolean value of the word being a valid word or not.
 
-def should_use_optimal_guess(self, word):
+<h3>def should_use_optimal_guess(self, word):</h3>
 This function determines when to use the ‘optimal_guess method’
 Example logic:
         If the word length is short (e.g., 3 letters), use optimal_guess
@@ -45,7 +45,7 @@ Example logic:
         If the revealed word is almost complete (few underscores left), use optimal_guess
         You can adjust the conditions based on your observations and testing
 
-def should_use_semantic_guess(self, ngram_guess, semantic_guess, word):
+<h3>def should_use_semantic_guess(self, ngram_guess, semantic_guess, word):</h3>
 This function determines when to use the ‘semantic_guess method’
 Example logic:
         If the word length is long (e.g., 7 letters), use semantic_guess with confidence
@@ -53,26 +53,28 @@ Example logic:
         If the revealed word has many unknown letters (more than half), use semantic_guess
         You can adjust the conditions based on your observations and testing
 
-def letter_frequency_score(self, word):
+<h3>def letter_frequency_score(self, word):</h3>
 This function calculates a score based on letter frequency in the English language higher frequency letters get a higher score.
 
-def pick_best_semantic_guess(self, similar_words):
+<h3>def pick_best_semantic_guess(self, similar_words):</h3>
 This function picks the best guess based on the semantics of the similar words. This iterates through a list of valid similar words and returns the best guess based on letter frequency score.
 
-def semantic_similarity_guess(self, word):
+<h3>def semantic_similarity_guess(self, word):</h3>
 This function picks the closest valid similar word based on the frequency score after iterating through a list of valid similar words.
 
-def possible_ngrams_3(self, inp):
+<h3>def possible_ngrams_3(self, inp):</h3>
 This function generates possible ngrams value and returns it for the optimized guesses. The main difference between this and the “possible_ngrams” function is the fallback strategy, for this we fallback on the “possible_ngrams” function.
 
-def possible_ngrams(self, inp):
+<h3>def possible_ngrams(self, inp):</h3>
 This function returns the best possible ngrams strategy for the current scenario and in case of fallback uses the “guess_fallback_letter()” function to help re-evaluate the scenario.
 
-def remove_letters_from_string(self, letters_to_remove, input_string):
+<h3>def remove_letters_from_string(self, letters_to_remove, input_string):</h3>
 This function just removes the letters to remove from the required string and trims it as required.
 
-def is_substring_with_wildcard(self,word, ngram):
+<h3>def is_substring_with_wildcard(self,word, ngram):</h3>
 This function returns the best match using the ngrams technique with the input word.
 
-def optimal_guess(self, word):
+<h3>def optimal_guess(self, word):</h3>
 This function combines multiple guess strategies and decides which one to use given the input of a specific word, the strategies at hand consists of “ngram_guess” and “semantic_guess”.
+
+<h2>VIDEO EXPLAINATION:-</h2> https://drive.google.com/file/d/1M2EN2ByRyb0K4jAcKAlD5w0UnPvsg8jy/view?usp=drive_link
